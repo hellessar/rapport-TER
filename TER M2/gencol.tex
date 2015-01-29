@@ -6,22 +6,37 @@ La génération de colonnes est une technique utlisée pour résoudre un program
 \subsubsubsection{Dualité}
 Pour un problème linéaire apellé \textit{Primal}, le Dual est la ''\textit{transposée}'' du \textit{Primal}: les variables du Primal deviennent les constantes du Dual et vice et versa. \\
 Le problème de maximisation du primal est le problème de minimisation du dual et réciproquement.
-
-
-\begin{multicols}{2}
-Problème Primal : \\
-$Min{ - x_1 + 4x_2}$
 \newline
+\\
+\underline{\textit{Exemple}} : 
+\\
+
+
+\begin{tabular}{ l p{5 cm}l p{5 cm}  l p{5 cm} l}
+Problème Primal : & & 
+Problème Dual : \\
+
+$Min{ - x_1 + 4x_2}$ & &  $Max -7\textit{u}_1 + 4\textit{u}_2 + 5\textit{u}_3$\\ 
+
+
 $\left\lbrace
 \begin{array}{l}
 -x_1\geq -7\\
 3x_1-2x_2 \geq 4\\
+x_1+x_2 \geq 5\\
+\end{array}
+\right.$ 
+& & 
+$\left\lbrace
+\begin{array}{l}
+-\textit{u}_1 + 3\textit{u}_2 + \textit{u}_3 \leq -1 \\
+-2\textit{u}_2 + \textit{u}_3 = 4 \\
 \end{array}
 \right.$
-\\ 
-Problème Dual
-\end{multicols}
+\end{tabular}
 
+
+\subsubsubsection{Coûts réduits}
 \subsection{Branch and Price}
 \subsubsection{Principe général}
 
