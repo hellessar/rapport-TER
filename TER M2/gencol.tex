@@ -1,0 +1,28 @@
+\section{Résolution de programmes linéaires}
+
+\subsection{Génération de colonnes}
+\subsubsection{Principe général}
+La génération de colonnes est une technique utlisée pour résoudre un programme linéaire en nombre réels, lorsque les variables sont trop nombreuses pour être toutes énumérées ou pour une résolution directe par un solveur. La génération de colonnes utilise en autres, la solution duale et les coûts réduits. \cite{introBCBP}
+\subsubsubsection{Dualité}
+Pour un problème linéaire apellé \textit{Primal}, le Dual est la ''\textit{transposée}'' du \textit{Primal}: les variables du Primal deviennent les constantes du Dual et vice et versa. \\
+Le problème de maximisation du primal est le problème de minimisation du dual et réciproquement.
+
+
+\begin{multicols}{2}
+Problème Primal : \\
+$Min{ - x_1 + 4x_2}$
+\newline
+$\left\lbrace
+\begin{array}{l}
+-x_1\geq -7\\
+3x_1-2x_2 \geq 4\\
+\end{array}
+\right.$
+\\ 
+Problème Dual
+\end{multicols}
+
+\subsection{Branch and Price}
+\subsubsection{Principe général}
+
+\subsubsection{exemple}

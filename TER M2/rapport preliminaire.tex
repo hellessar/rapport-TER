@@ -1,0 +1,128 @@
+%%% LaTeX Template
+%%% This template can be used for both articles and reports.
+%%%
+%%% Copyright: http://www.howtotex.com/
+%%% Date: February 2011
+
+%%% Preamble
+\documentclass[paper=a4, fontsize=11pt]{scrartcl}	% Article class of KOMA-script with 11pt font and a4 format
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\makeatletter
+\newcounter {subsubsubsection}[subsubsection]
+\renewcommand\thesubsubsubsection{\thesubsubsection .\@alph\c@subsubsubsection}
+\newcommand\subsubsubsection{\@startsection{subsubsubsection}{4}{\z@}%
+                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5ex \@plus .2ex}%
+                                     {\normalfont\normalsize\bfseries}}
+\renewcommand\paragraph{\@startsection{paragraph}{5}{\z@}%
+                                    {3.25ex \@plus1ex \@minus.2ex}%
+                                    {-1em}%
+                                    {\normalfont\normalsize\bfseries}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{6}{\parindent}%
+                                       {3.25ex \@plus1ex \@minus .2ex}%
+                                       {-1em}%
+                                      {\normalfont\normalsize\bfseries}}
+\newcommand*\l@subsubsubsection{\@dottedtocline{4}{10.0em}{4.1em}}
+\renewcommand*\l@paragraph{\@dottedtocline{5}{10em}{5em}}
+\renewcommand*\l@subparagraph{\@dottedtocline{6}{12em}{6em}}
+\newcommand*{\subsubsubsectionmark}[1]{}
+
+
+
+\usepackage[english]{babel}														% English language/hyphenation
+\usepackage[protrusion=true,expansion=true]{microtype}				% Better typography
+\usepackage{amsmath,amsfonts,amsthm}										% Math packages
+\usepackage[pdftex]{graphicx}		
+\usepackage{color}
+% Enable pdflatex
+%\usepackage{color,transparent}													% If you use color and/or transparency
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption}	% Custom captions under/above floats
+\usepackage{epstopdf}																	% Converts .eps to .pdf
+\usepackage{subfig}																		% Subfigures
+\usepackage{booktabs}																	% Nicer tables
+\usepackage{wrapfig} 
+
+%%% Advanced verbatim environment
+\usepackage{verbatim}
+\usepackage{fancyvrb}
+\usepackage[utf8]{inputenc}
+\DefineShortVerb{\|}								% delimiter to display inline verbatim text
+
+
+%%% Custom sectioning (sectsty package)
+\usepackage{sectsty}								% Custom sectioning (see below)
+\allsectionsfont{%									% Change font of al section commands
+	\usefont{OT1}{bch}{b}{n}%					% bch-b-n: CharterBT-Bold font
+%	\hspace{15pt}%									% Uncomment for indentation
+	}
+
+\sectionfont{%										% Change font of \section command
+	\usefont{OT1}{bch}{b}{n}%					% bch-b-n: CharterBT-Bold font
+	\sectionrule{0pt}{0pt}{-5pt}{0.8pt}%	% Horizontal rule below section
+	}
+
+
+%%% Custom headers/footers (fancyhdr package)
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead{}														% No page header
+\fancyfoot[C]{\thepage}										% Pagenumbering at center of footer
+\fancyfoot[R]{\small \texttt{Master II 2014-2015}}	% You can remove/edit this line 
+\renewcommand{\headrulewidth}{0pt}				% Remove header underlines
+\renewcommand{\footrulewidth}{0pt}				% Remove footer underlines
+\setlength{\headheight}{13.6pt}
+
+
+
+%%% Equation and float numbering
+\numberwithin{equation}{section}															% Equationnumbering: section.eq#
+\numberwithin{figure}{section}																% Figurenumbering: section.fig#
+\numberwithin{table}{section}																% Tablenumbering: section.tab#
+
+
+%%% Title	
+\title{ \vspace{-1in} 	\usefont{OT1}{bch}{b}{n}
+		\huge \strut Recherche rapide d'arbres de Steiner \strut \\
+		\Large \bfseries \strut Eric Bourreau \\ Rodolphe Giroudeau \strut
+}
+\author{ 									
+	\usefont{OT1}{bch}{m}{n} David Aubert\\		
+	\usefont{OT1}{bch}{m}{n} Deguilhem Julien\\		
+	\usefont{OT1}{bch}{m}{n}Université de  Montpellier II\\	
+	\usefont{OT1}{bch}{m}{n}Rapport préliminaire Master II\\
+}
+\date{20 jan 2015}
+
+
+%%% Begin document
+\begin{document}
+\maketitle
+
+\section{Génération de colonne}
+\begin{hspace}{1cm}
+La génération
+\end{hspace}
+de colonne est une méthode pour résoudre les programmes linéaires de grande taille. Pierre Courteille étudiant le sujet, une collaboration sera effectué. Mais les motivations et les interêts sont grand en effet, les approximations succéssives faites pourront être résolues par cette méthode. Une implémentation du simplex ou par combinaison linéaire pourra être faite.
+
+
+\section{Recherche et approximation}
+\begin{hspace}{1cm}
+	Le but de ce TER
+\end{hspace}
+n'est pas de trouvé la solution optimal mais une solution rapide. Une étude sera faite pour déterminer la k-approximation. Lorsque  nous en avons parlé le k varier entre [2..3].
+\newline
+Ensuite il faudra se décider entre la programmation linéaire, dynamique et par contrainte. Après une sommaire étude entre ces trois éléments, nous pensons que le plus efficace sera la programmation dynamique (A confirmer).
+
+
+
+\section{Initialisation}
+\begin{hspace}{1cm}
+	Ensuite une 
+\end{hspace}
+des manières de construire un arbre de Steiner serait en suivant l'exemple de la sélection naturelle. Il faudrait construire un réseau génétique afin de faire hériter à chague génération les meilleurs éléments de la précédente. En effet cela semble être une méthode efficace et naturel. De plus, cela semblerait correspondre au type de programmation choisi, pour le moment dynamique.
+\newline
+Il faudra pouvoir trouver une heuristique efficace pour générer un ensemble déjà suffisament adapté afin de trouver un nombre de génération d'individu minimal.
+
+\end{document}
