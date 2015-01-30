@@ -1,0 +1,71 @@
+
+
+\subsubsubsection{Génération de colonnes}
+
+\subsection{Branch and Price}
+\subsubsection{Principe général}
+Un algorithme de branch and Price est l'équivalent d'un algorithme de Branch and Bound et de génération de colonnes. \\
+La différence se fait par incrémentation. A chaque noeud, une résolution de PL. De ce fait on ne garantit pas à chaque noeud une solution optimal ou même valide. 
+\\
+La première étape d'un branch and price est de générer ce qui s'appele le \textbf{\textit{Master Problem}}.\\
+De ce \textbf{\textit{Master Problem}} devront être générés des \textbf{\textit{sous-problèmes}}. \\
+Chaque \textbf{\textit{sous-problèmes}} sera résolu et à chaque itération, une résolution de PL sera effectué et chaque solution entrainera une génération de colonne et sera rajouté à la solution. \\
+Lorsque tout les \textbf{\textit{sous-problèmes}} générés admettent une solution entièrement négative c'est la fin de l'algorithme.
+
+
+\subsubsection{exemple}
+
+\begin{tabular}{  p{2.5cm} c c c}
+\hline
+\textbf{Job}\textit{(i)} \\
+\hline
+ & 1 & 2 & 3 \\
+ \hline
+Machine \textit{i} = 1 & 5 & 7 & 3 \\
+Machine \textit{i} = 2 & 2 & 10 & 5 \\
+\hline
+\end{tabular}
+
+\vspace{1cm}
+
+\begin{tabular}{c c}
+\hline
+\textit{i} & $C_\textit{i}$\\
+\hline
+1 & 5 \\
+\hline
+2 & 8\\
+\hline
+\end{tabular}
+
+\vspace{1cm}
+
+\begin{tabular}{  p{2.5cm} c c c}
+\hline
+\textbf{Job}\textit{(i)} \\
+\hline
+ & 1 & 2 & 3 \\
+ \hline
+Machine \textit{i} = 1 & 3 & 5 & 2 \\
+Machine \textit{i} = 2 & 4 & 3 & 4 \\
+\hline
+\end{tabular}
+
+\vspace{1cm}
+
+Soit \textit{$k_1$} et \textit{$k_2$} l'ensemble des solutions possibles pour les machines 1 et 2 tel que
+\\
+\textit{$k_1$} = { (1,0,0), (0,1,0), (0,0,1), (1,0,1)} \\
+\textit{$k_2$} = {  (1,0,0), (0,1,0), (0,0,1), (1,1,0), (0,1,1)} \\ 
+
+Le \textbf{\textit{Master Problem}} pourra être representé comme ci-suit:
+\\
+\textbf{max} z = 5$y_1^1$ + 7$y_1^2$ + 3$y_1^3$ + 8$y_1^4$ + 2$y_2^1$+10$y_2^2$ + 5$y_2^3$ + 12$y_2^4$+15$y_2^5$
+\\ \\
+Voici une décomposition par job: \\
+$y_1^1$ + 0 + 0 +$y_1^4$ + 0 + 0 + $y_2^4$ + 0 = 1 (\textit{$u_1$}) \\
+0 + $y_1^2$ + 0 + 0 + 0 + $y_2^2$ + 0 + $y_2^4$ + $y_2^5$ = 1 (\textit{$u_2$}) \\
+0 + 0 + $y_1^3$ + $y_1^4$ + 0 + 0 + $y_2^3$ + 0 + $y_2^5$ = 1     (\textit{$u_3$}) \\
+
+Ici au lieu d'exprimer les \textbf{Machines} par \textbf{Job}, est exprimé les \textbf{Job} par \textbf{Machines}. C'est le Dual.
+
