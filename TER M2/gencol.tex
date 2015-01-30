@@ -33,17 +33,59 @@ $\left\lbrace
 \right.$
 \end{tabular}
 
-
 \subsubsubsection{Coûts réduits}
 
-Pour résoudre un PL il faut une base. Tel que pour un problème de minimisation il y ait:
+Pour résoudre un PL, donné par une matrice de contrainte A il faut une base B. Tel que pour un problème de minimisation il y ait:
 \newline
 \newline
+Minimiser $cx$
 \hspace{2.5cm} A\textit{x = d} 
 \\
 \hspace{2.5cm}\textit{ $x \geq 0$}
 \\
 \\
-Ici, il est possible de transformer les contraintes d'inégalités en égalités avec l'ajout de variables d'écarts. \\ \\ 
-Pour chaque variables d'écarts, il y a un coût: \textit{$c_j$} \textit{(Coût associé à la variable d'écart j)}. 
-Son coût réduit est l'écart qu'il y a entre son coût et 
+On réécrit ce problème avec la base B:\\
+Minimiser $B.x_B + N.x_N =d$
+\hspace{2.5cm}\textit{ $x_B \geq 0$},\hspace{2.5cm}\textit{ $x_N \geq 0$}
+
+Où $N$ est la matrice qui complete $B$ pour reformer $A$,$x_B$ les variables en base ( Les colonnes choisis dans A pour former B) et  $x_N$ les variables hors-base.
+
+Ici, il est possible de transformer les contraintes d'inégalités en égalités avec l'ajout de variables d'écarts. On les ajoute négativement pour une inégalité "superieur à" et inversement\\ \\
+Pour chaque variables d'écarts, il y a un coût: \textit{$c_j$} \textit{(Coût associé à la variable d'écart j)}.
+Son coût réduit est l'écart qu'il y a entre le coût associé à la variable hors-base $x_j$ et les variables duales en base pour la contrainte $j$.\\
+$c_j = c_j - c_B.B{-1}.A_j$\\
+
+Calculer le coût réduit revient à donner "de combien" peut s'améliorer la fonction objective si on relâche la contrainte $j$ d'une unité.
+\newline
+\\
+\underline{\textit{Exemple}} : 
+\\
+En suivant l'exemple précédent, on y ajoute les variables d'écart :
+\begin{tabular}{ l p{5 cm}l p{5 cm}  l p{5 cm} l}
+Problème Primal : & & 
+coûts réduits: \\
+
+$Min{ - x_1 + 4x_2}$ & &  $c_3 = 5$\\ 
+
+\iffalse
+$\left\lbrace
+\begin{array}{l}
+-x_1\geq -7\\
+3x_1-2x_2 \geq 4\\
+x_1+x_2 \geq 5\\
+\end{array}
+\right.$ 
+& & 
+$\left\lbrace
+c_4 = 0 \\
+c_5 = 4 \\
+\right.$
+\fi
+\end{tabular}
+
+\subsubsubsection{Génération de colonnes}
+La génération de colonnes fonctionne sur un problème en nombre réels (Pas de PLNE). Elle est utilisé quand le PL possède un très grand nombre de variable. L'idée etant de résoudre le problème maitre en ne prenant en compte qu'un nombre restreint et suffisant de variables.\\
+
+On commence par générer un PL à partir du problème maitre, qu'on va appeler problème maitre restreint (PMR). Le choix de se problème doit se faire de manière heuristique pour optimiser le développement de l'algorithme. Puis on va générer des variables améliorantes susceptibles d'améliorer le résultat.\\
+
+Pour les trouver, on va s'interresser au problème dual.
