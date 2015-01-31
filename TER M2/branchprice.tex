@@ -66,6 +66,52 @@ Ici au lieu d'exprimer les \textbf{Machines} par \textbf{Job}, est exprimé les 
 $y_1^1$ + $y_1^2$ + $y_1^3$ + $y_1^4$ $\leq$ 1 (\textit{$v_1$}) \\
 $y_2^1$ + $y_2^2$ + $y_2^3$ + $y_2^4$ $\leq$ 1 (\textit{$v_2$}) \\
 
-Ici ce sont les contraintes la somme doit être inférieur à 1.
-( $\sum_{i=1}^5$
- P(i,j))
+La prochaine étape est de choisir un ensemble de solution réalisable. Dans notre cas; le choix est relativement facile, mais un domaine d'étude intéressant est l'optimisation de ce choix, trouver rapidement une solution réalisable efficace pour les problèmes plus difficile.
+\\
+\\
+Dans cet exemple, $y_1^1$ et $y_2^5$ seront choisis (arbitrairement). De ce fait voici le nouveau \textbf{\textit{Master Problem restricted}} (RMP) : \\
+\textbf{max} \textit{z} = 5$y_1^1$  + 15$y_2^5$ 
+\\ \\
+\begin{tabular}{c c }
+$y_1^1$  + 0 = 1 & \\
+0 + $y_2^5$ = 1 & \\
+\sout{0 + $y_2^5$ = 1} & \\
+\sout{$y_1^1$  + 0 = 1} & \textit{redondant}\\
+\sout{0 + $y_2^5$ =1} & \\ 
+\end{tabular} 
+
+\vspace{0.5cm}
+Voici la matrice de Base B et son inverse: 
+\\
+
+\begin{center}
+\begin{tabular}{c c}
+B=$\begin{bmatrix}
+1 & 0 \\
+0 & 1
+ \end{bmatrix} $                  
+&
+$B^{-1}$=$\begin{bmatrix}
+1 & 0 \\
+0 & 1
+ \end{bmatrix} $             
+\end{tabular}
+\end{center}
+
+
+$y_1^1$ est pour rappel, la variable d'éxécution de la tâche 1 sur la machine 1 son coefficient est de 5. \\
+$y_2^5$ est la variable pour le travail sur la machine 2 de la tâche 2 \textbf{et} 3 de ce fait il représente la somme de ces deux coefficients : 10 et 5. \\
+
+De ce fait, pour le moment, la meilleur solution est \textit{$u_1$} = \TextSoulign{red}{ }{ 5},  \textit{$u_2$} = \TextSoulign{red}{ }{15}, \textit{$v_1$} = 0, \textit{$v_2$} = 0.    \\
+
+Nous allons décomposer les sous problèmes par machine:
+\begin{itemize}
+\item{
+Sous problème machine 1 : \\ \\ 
+\textit{\underline{Rappel:}}  Tâches demandées pour Machine 1 =  \TextSoulign{blue}{ }{ 5}$x_1^1$ + \TextSoulign{blue}{ }{ 7}$x_1^2$ + \TextSoulign{blue}{ }{3}$x_1^3$  \\ 
+Capacité Machine 1 = 3$x_1^1$ + 4$x_1^2$ + $x_1^3$ $\leq$ 5
+\\ \\ 
+\textbf{max} ( \TextSoulign{blue}{ }{ 5} - \TextSoulign{red}{ }{5} ) $x_1^1$ + (\TextSoulign{blue}{ }{ 7} - \TextSoulign{red}{ }{15} ) $x_1^2$ + (\TextSoulign{blue}{ }{3} - 0) $x_1^3$
+}
+
+\end{itemize}

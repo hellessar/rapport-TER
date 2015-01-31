@@ -1,54 +1,61 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.9)  31 JAN 2015 02:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.3)  31 JAN 2015 19:10
 entering extended mode
-**rapport.tex
-("C:\Users\Bertha\Desktop\rapport-TER\TER M2\rapport.tex"
+**C:/Users/Véro*2/Documents/GitHub/rapport-TER/TER*M2/rapport.tex
+("C:/Users/Véro 2/Documents/GitHub/rapport-TER/TER M2/rapport.tex"
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali
-, bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, galic
-ian, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, icelandic, indonesian, interlingua, irish, italian,
- kannada, kurmanji, latin, latvian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, ngerman
--x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sloven
-ian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usenglishmax, w
-elsh, loaded.
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrartcl.cls"
-Document Class: scrartcl 2015/01/14 v3.15 KOMA-Script document class (article)
+Document Class: scrartcl 2013/12/19 v3.12 KOMA-Script document class (article)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrkbase.sty"
-Package: scrkbase 2015/01/14 v3.15 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+Package: scrkbase 2013/12/19 v3.12 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrbase.sty"
-Package: scrbase 2015/01/14 v3.15 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+Package: scrbase 2013/12/19 v3.12 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrlfile.sty"
-Package: scrlfile 2015/01/14 v3.15 KOMA-Script package (loading files)
+Package: scrlfile 2013/12/19 v3.12 KOMA-Script package (loading files)
 
-Package scrlfile, 2015/01/14 v3.15 KOMA-Script package (loading files)
+Package scrlfile, 2013/12/19 v3.12 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
 ))) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\tocbasic.sty"
-Package: tocbasic 2015/01/14 v3.15 KOMA-Script package (handling toc-files)
+Package: tocbasic 2013/12/19 v3.12 KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `toc' on input line 116.
+(tocbasic)             for `toc' on input line 115.
 Package tocbasic Info: omitting babel extension for `lof'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lof' on input line 117.
+(tocbasic)             for `lof' on input line 116.
 Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lot' on input line 118.
-Class scrartcl Info: File `scrsize11pt.clo' used to setup font sizes on input line 1563.
+(tocbasic)             for `lot' on input line 117.
+Class scrartcl Info: File `scrsize11pt.clo' used to setup font sizes on input l
+ine 1531.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrsize11pt.clo"
-File: scrsize11pt.clo 2015/01/14 v3.15 KOMA-Script font size class option (11pt)
+File: scrsize11pt.clo 2013/12/19 v3.12 KOMA-Script font size class option (11pt
+)
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\typearea.sty"
-Package: typearea 2015/01/14 v3.15 KOMA-Script package (type area)
+Package: typearea 2013/12/19 v3.12 KOMA-Script package (type area)
 
-Package typearea, 2015/01/14 v3.15 KOMA-Script package (type area)
+Package typearea, 2013/12/19 v3.12 KOMA-Script package (type area)
                   Copyright (C) Frank Neukam, 1992-1994
                   Copyright (C) Markus Kohm, 1994-
 
@@ -74,7 +81,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 1341.
+(typearea)              on input line 1330.
 )
 \c@part=\count80
 \c@section=\count81
@@ -122,6 +129,7 @@ LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\microtype-pdftex.def"
 File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
+
 LaTeX Info: Redefining \lsstyle on input line 915.
 LaTeX Info: Redefining \lslig on input line 915.
 \MT@outer@space=\skip48
@@ -292,7 +300,8 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
@@ -304,7 +313,8 @@ Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 ))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
@@ -351,37 +361,46 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \WF@everypar=\toks27
 Package: wrapfig 2003/01/31  v 3.6
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ulem\ulem.sty"
+\UL@box=\box30
+\UL@hyphenbox=\box31
+\UL@skip=\skip60
+\UL@hook=\toks28
+\UL@height=\dimen139
+\UL@pe=\count118
+\UL@pixel=\dimen140
+\ULC@box=\box32
+Package: ulem 2012/05/18
+\ULdepth=\dimen141
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks28
-\verbatim@line=\toks29
+\every@verbatim=\toks29
+\verbatim@line=\toks30
 \verbatim@in@stream=\read1
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\multicol.sty"
 Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
-\c@tracingmulticols=\count118
-\mult@box=\box30
-\multicol@leftmargin=\dimen139
-\c@unbalance=\count119
-\c@collectmore=\count120
-\doublecol@number=\count121
-\multicoltolerance=\count122
-\multicolpretolerance=\count123
-\full@width=\dimen140
-\page@free=\dimen141
-\premulticols=\dimen142
-\postmulticols=\dimen143
-\multicolsep=\skip60
-\multicolbaselineskip=\skip61
-\partial@page=\box31
-\last@line=\box32
-\mult@rightbox=\box33
-\mult@grightbox=\box34
-\mult@gfirstbox=\box35
-\mult@firstbox=\box36
-\@tempa=\box37
-\@tempa=\box38
-\@tempa=\box39
+\c@tracingmulticols=\count119
+\mult@box=\box33
+\multicol@leftmargin=\dimen142
+\c@unbalance=\count120
+\c@collectmore=\count121
+\doublecol@number=\count122
+\multicoltolerance=\count123
+\multicolpretolerance=\count124
+\full@width=\dimen143
+\page@free=\dimen144
+\premulticols=\dimen145
+\postmulticols=\dimen146
+\multicolsep=\skip61
+\multicolbaselineskip=\skip62
+\partial@page=\box34
+\last@line=\box35
+\mult@rightbox=\box36
+\mult@grightbox=\box37
+\mult@gfirstbox=\box38
+\mult@firstbox=\box39
 \@tempa=\box40
 \@tempa=\box41
 \@tempa=\box42
@@ -396,30 +415,34 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \@tempa=\box51
 \@tempa=\box52
 \@tempa=\box53
-\c@columnbadness=\count124
-\c@finalcolumnbadness=\count125
-\last@try=\dimen144
-\multicolovershoot=\dimen145
-\multicolundershoot=\dimen146
-\mult@nat@firstbox=\box54
-\colbreak@box=\box55
-\multicol@sort@counter=\count126
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\c@columnbadness=\count125
+\c@finalcolumnbadness=\count126
+\last@try=\dimen147
+\multicolovershoot=\dimen148
+\multicolundershoot=\dimen149
+\mult@nat@firstbox=\box57
+\colbreak@box=\box58
+\multicol@sort@counter=\count127
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyvrb\fancyvrb.sty"
 Package: fancyvrb 2008/02/07
 
-Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix <2008/02/07> (tvz)
-\FV@CodeLineNo=\count127
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count128
 \FV@InFile=\read2
-\FV@TabBox=\box56
-\c@FancyVerbLine=\count128
-\FV@StepNumber=\count129
+\FV@TabBox=\box59
+\c@FancyVerbLine=\count129
+\FV@StepNumber=\count130
 \FV@OutFile=\write3
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks30
-\inpenc@posthook=\toks31
+\inpenc@prehook=\toks31
+\inpenc@posthook=\toks32
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
@@ -427,7 +450,8 @@ Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -576,7 +600,8 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -632,7 +657,8 @@ Now handling font encoding U ...
    defining Unicode char U+2423 (decimal 9251)
 ))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\sectsty\sectsty.sty"
-Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
 )
 
 Class scrartcl Warning: Usage of package `fancyhdr' together
@@ -643,17 +669,17 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 (scrartcl)              package `fancyhdr' on input line 70.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
-\fancy@headwidth=\skip62
-\f@ncyO@elh=\skip63
-\f@ncyO@erh=\skip64
-\f@ncyO@olh=\skip65
-\f@ncyO@orh=\skip66
-\f@ncyO@elf=\skip67
-\f@ncyO@erf=\skip68
-\f@ncyO@olf=\skip69
-\f@ncyO@orf=\skip70
+\fancy@headwidth=\skip63
+\f@ncyO@elh=\skip64
+\f@ncyO@erh=\skip65
+\f@ncyO@olh=\skip66
+\f@ncyO@orh=\skip67
+\f@ncyO@elf=\skip68
+\f@ncyO@erf=\skip69
+\f@ncyO@olf=\skip70
+\f@ncyO@orf=\skip71
 )
-("C:\Users\Bertha\Desktop\rapport-TER\TER M2\rapport.aux")
+("C:\Users\Véro 2\Documents\GitHub\rapport-TER\TER M2\rapport.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
 LaTeX Font Info:    ... okay on input line 100.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
@@ -678,21 +704,22 @@ Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\mt-cmr.cfg"
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count130
-\scratchdimen=\dimen147
-\scratchbox=\box57
-\nofMPsegments=\count131
-\nofMParguments=\count132
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count133
-\MPscratchDim=\dimen148
-\MPnumerator=\count134
-\makeMPintoPDFobject=\count135
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count131
+\scratchdimen=\dimen150
+\scratchbox=\box60
+\nofMPsegments=\count132
+\nofMParguments=\count133
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count134
+\MPscratchDim=\dimen151
+\MPnumerator=\count135
+\makeMPintoPDFobject=\count136
+\everyMPtoPDFconversion=\toks34
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
@@ -703,11 +730,13 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Try loading font information for OT1+bch on input line 102.
+
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1bch.fd"
 File: ot1bch.fd 2004/10/18 font definitions for OT1/bch.
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\mt-bch.cfg"
 File: mt-bch.cfg 2007/03/03 v1.5 microtype config. file: Bitstream Charter (RS)
+
 )
 LaTeX Font Info:    Font shape `OT1/bch/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/bch/b/n' tried instead on input line 102.
@@ -727,7 +756,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-("C:\Users\Bertha\Desktop\rapport-TER\TER M2\gencol.tex"
+("C:\Users\Véro 2\Documents\GitHub\rapport-TER\TER M2\gencol.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 4--10
 
  []
@@ -757,6 +786,8 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 [1
+
+
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
@@ -789,7 +820,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
-) [2] ("C:\Users\Bertha\Desktop\rapport-TER\TER M2\branchprice.tex"
+) [2] ("C:\Users\Véro 2\Documents\GitHub\rapport-TER\TER M2\branchprice.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 51--55
 
  []
@@ -809,30 +840,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--68
 
  []
 
-) ("C:\Users\Bertha\Desktop\rapport-TER\TER M2\biblio.tex") [4] ("C:\Users\Bertha\Desktop\rapport-TER\TER M2\rapport.aux
-") ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 109.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 109.
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--116
+
+ []
+
+[4]) ("C:\Users\Véro 2\Documents\GitHub\rapport-TER\TER M2\biblio.tex")
+[5] ("C:\Users\Véro 2\Documents\GitHub\rapport-TER\TER M2\rapport.aux") ) 
 Here is how much of TeX's memory you used:
- 8008 strings out of 493921
- 126994 string characters out of 3144873
- 276924 words of memory out of 3000000
- 11087 multiletter control sequences out of 15000+200000
- 26335 words of font info for 94 fonts, out of 3000000 for 9000
+ 7961 strings out of 493921
+ 125064 string characters out of 3144924
+ 273113 words of memory out of 3000000
+ 11036 multiletter control sequences out of 15000+200000
+ 26225 words of font info for 93 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 54i,16n,47p,413b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/bi
-tstrea/charter/bchb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbxti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
-i8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmtt10.pfb>
-Output written on rapport.pdf (4 pages, 181710 bytes).
+ 54i,16n,47p,466b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmtt10.pfb>
+Output written on rapport.pdf (5 pages, 184812 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
+ 79 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  22017 words of extra memory for PDF output out of 24883 (max. 10000000)
 
