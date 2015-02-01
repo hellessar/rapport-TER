@@ -112,6 +112,91 @@ Sous problème machine 1 : \\ \\
 Capacité Machine 1 = 3$x_1^1$ + 4$x_1^2$ + $x_1^3$ $\leq$ 5
 \\ \\ 
 \textbf{max} ( \TextSoulign{blue}{ }{ 5} - \TextSoulign{red}{ }{5} ) $x_1^1$ + (\TextSoulign{blue}{ }{ 7} - \TextSoulign{red}{ }{15} ) $x_1^2$ + (\TextSoulign{blue}{ }{3} - 0) $x_1^3$
+\\
+ Il existe deux solutions : (1, 0, 1) et (0, 0, 1) avec comme coeffficient 3.
 }
 
+\item{
+Sous problème machine 2: 
+\\
+\\
+\textit{\underline{Rappel:}}  Tâches demandées pour Machine 2 =  \TextSoulign{green}{ }{2}$x_2^1$ + \TextSoulign{green}{ }{10}$x_2^2$ + \TextSoulign{green}{ }{5}$x_2^3$  \\ 
+Capacité Machine 2 = 3$x_2^1$ + 4$x_2^2$ + $x_2^3$ $\leq$ 5
+\\ \\ 
+\textbf{max} ( \TextSoulign{green}{ }{2} - \TextSoulign{red}{ }{5} ) $x_2^1$ + (\TextSoulign{green}{ }{10} - \TextSoulign{red}{ }{15} ) $x_2^2$ + (\TextSoulign{green}{ }{5} - 0) $x_2^3$
+\\
+\\ Il existe une solution : (0, 0, 1)  avec comme coeffficient 5.
+}
 \end{itemize}
+Il faut ensuite choisir une des deux solutions des sous problèmes, dans notre cas de maximisation il faut choisir le coefficient maximum, c'est à dire 5 du sous problème 2 : 5 avec comme solution (0, 0, 1) qui correspond à $y_2^3$. C'est la génération de colonne : une solution vient d'être trouvé et va implémenter notre solution final.
+\\
+Le nouveau \textbf{RMP} passe de :
+\begin{center}
+ 5$y_1^1$  + 15$y_2^5$  \\
+ 5$y_1^1$  + 15$y_2^5$ +   \TextSoulign{black}{ }{5}$y_2^3$
+\end{center}
+
+Voici la nouvelle décomposition :
+
+\begin{tabular}{cc}
+$y_1^1$  + 0 + 0 = 1 & \\
+0 + $y_2^5$ + 0= 1 & \\
+0 + $y_2^5$ + $y_2^3$= 1 & \\
+\sout{$y_1^1$  + 0 + 0 = 1} & \textit{redondant}\\
+\sout{0 + $y_2^5$ + $y_2^3$ =1} & \\ 
+\end{tabular}
+
+\begin{center}
+\begin{tabular}{c c c}
+B=$\begin{bmatrix}
+1 & 0 & 0\\
+0 & 1 & 0 \\
+0 & 0 & 1 
+ \end{bmatrix} $                  
+&
+$B^{-1}$=$\begin{bmatrix}
+1 & 0 & 0\\
+0 & 1 & 0 \\
+0 & 0 & 1 
+ \end{bmatrix} $             
+\end{tabular}
+\end{center}
+
+De ce fait comme la dernière fois on se retrouve avec une matrice identité et les coefficients restent inchangés. \\
+La \textit{$''nouvelle''$} meilleur solution est \textit{$u_1$} = \TextSoulign{red}{ }{ 5},  \textit{$u_2$} = \TextSoulign{red}{ }{15}, \textit{$u_3$} = \TextSoulign{black}{ }{5}, \textit{$v_1$} = 0, \textit{$v_2$} = 0.    
+\\
+De là, il faudra à nouveau décomposer en sous problème par machine
+\\
+Nous aurons donc : 
+\\
+\begin{itemize}
+\item{
+Sous problème machine 1 : \\ \\ 
+\textit{\underline{Rappel:}}  Tâches demandées pour Machine 1 =  \TextSoulign{blue}{ }{ 5}$x_1^1$ + \TextSoulign{blue}{ }{ 7}$x_1^2$ + \TextSoulign{blue}{ }{3}$x_1^3$  \\ 
+Capacité Machine 1 = 3$x_1^1$ + 4$x_1^2$ + $x_1^3$ $\leq$ 5
+\\ \\ 
+\textbf{max} ( \TextSoulign{blue}{ }{ 5} - \TextSoulign{red}{ }{5} ) $x_1^1$ + (\TextSoulign{blue}{ }{ 7} - \TextSoulign{red}{ }{15} ) $x_1^2$ + (\TextSoulign{blue}{ }{3} - 0) $x_1^3$
+\\
+ Il existe deux solutions : (1, 0, 1) et (0, 0, 1) avec comme coeffficient 3.
+}
+
+\item{
+Sous problème machine 2: 
+\\
+\\
+\textit{\underline{Rappel:}}  Tâches demandées pour Machine 2 =  \TextSoulign{green}{ }{2}$x_2^1$ + \TextSoulign{green}{ }{10}$x_2^2$ + \TextSoulign{green}{ }{5}$x_2^3$  \\ 
+Capacité Machine 2 = 3$x_2^1$ + 4$x_2^2$ + $x_2^3$ $\leq$ 5
+\\ \\ 
+\textbf{max} ( \TextSoulign{green}{ }{2} - \TextSoulign{red}{ }{5} ) $x_2^1$ + (\TextSoulign{green}{ }{10} - \TextSoulign{red}{ }{15} ) $x_2^2$ + (\TextSoulign{green}{ }{5} - 0) $x_2^3$
+\\
+\\ Il existe une solution : (0, 0, 1)  avec comme coeffficient 5.
+}
+\end{itemize}
+
+
+
+
+
+
+
+
