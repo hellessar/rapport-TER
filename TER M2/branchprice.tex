@@ -113,7 +113,7 @@ Capacité Machine 1 = 3$x_1^1$ + 4$x_1^2$ + $x_1^3$ $\leq$ 5
 \\ \\ 
 \textbf{max} ( \TextSoulign{blue}{ }{ 5} - \TextSoulign{red}{ }{5} ) $x_1^1$ + (\TextSoulign{blue}{ }{ 7} - \TextSoulign{red}{ }{15} ) $x_1^2$ + (\TextSoulign{blue}{ }{3} - 0) $x_1^3$
 \\
- Il existe deux solutions : (1, 0, 1) et (0, 0, 1) avec comme coeffficient 3.
+ Le coefficient $x_1^2$ étant négatif, il exclut toute solution avec lui dedans et (1, 0, 0) étant nul ce ne sera pas une solution optimal. Quel que soit la solution optimal choisi le max des coefficients sera 3. 
 }
 
 \item{
@@ -125,11 +125,14 @@ Capacité Machine 2 = 3$x_2^1$ + 4$x_2^2$ + $x_2^3$ $\leq$ 5
 \\ \\ 
 \textbf{max} ( \TextSoulign{green}{ }{2} - \TextSoulign{red}{ }{5} ) $x_2^1$ + (\TextSoulign{green}{ }{10} - \TextSoulign{red}{ }{15} ) $x_2^2$ + (\TextSoulign{green}{ }{5} - 0) $x_2^3$
 \\
-\\ Il existe une solution : (0, 0, 1)  avec comme coeffficient 5.
+\\ Il existe une solution : (0, 0, 1) car $x_1^2$  et $x_1^1$  étant négatif, ils sont exclus de la solution. Le coefficient maximum possible sera 5.
 }
 \end{itemize}
-Il faut ensuite choisir une des deux solutions des sous problèmes, dans notre cas de maximisation il faut choisir le coefficient maximum, c'est à dire 5 du sous problème 2 : 5 avec comme solution (0, 0, 1) qui correspond à $y_2^3$. C'est la génération de colonne : une solution vient d'être trouvé et va implémenter notre solution final.
+
+Maintenant que les deux problèmes ont été résolu, le \textbf{MPR} va être complété. Des deux solutions le sous problème 2 est celui avec le plus gros coefficient, ce qui représente la plus grosse maximisation.
 \\
+C'est à dire 5 du sous problème 2 : 5 avec comme solution (0, 0, 1) qui correspond à $y_2^3$. C'est la génération de colonne : une solution vient d'être trouvé et va implémenter notre solution final.
+\\ \\ 
 Le nouveau \textbf{RMP} passe de :
 \begin{center}
  5$y_1^1$  + 15$y_2^5$  \\
@@ -175,9 +178,11 @@ Sous problème machine 1 : \\ \\
 \textit{\underline{Rappel:}}  Tâches demandées pour Machine 1 =  \TextSoulign{blue}{ }{ 5}$x_1^1$ + \TextSoulign{blue}{ }{ 7}$x_1^2$ + \TextSoulign{blue}{ }{3}$x_1^3$  \\ 
 Capacité Machine 1 = 3$x_1^1$ + 4$x_1^2$ + $x_1^3$ $\leq$ 5
 \\ \\ 
-\textbf{max} ( \TextSoulign{blue}{ }{ 5} - \TextSoulign{red}{ }{5} ) $x_1^1$ + (\TextSoulign{blue}{ }{ 7} - \TextSoulign{red}{ }{15} ) $x_1^2$ + (\TextSoulign{blue}{ }{3} - 0) $x_1^3$
+\textbf{max} ( \TextSoulign{blue}{ }{ 5} - \TextSoulign{red}{ }{5} ) $x_1^1$ + (\TextSoulign{blue}{ }{ 7} - \TextSoulign{red}{ }{15} ) $x_1^2$ + (\TextSoulign{blue}{ }{3} -  \TextSoulign{black}{ }{5}) $x_1^3$
 \\
- Il existe deux solutions : (1, 0, 1) et (0, 0, 1) avec comme coeffficient 3.
+ Il n'existe plus de solutions optimales tout les coefficients sont nul ou négatifs. 
+ \\
+
 }
 
 \item{
@@ -187,11 +192,21 @@ Sous problème machine 2:
 \textit{\underline{Rappel:}}  Tâches demandées pour Machine 2 =  \TextSoulign{green}{ }{2}$x_2^1$ + \TextSoulign{green}{ }{10}$x_2^2$ + \TextSoulign{green}{ }{5}$x_2^3$  \\ 
 Capacité Machine 2 = 3$x_2^1$ + 4$x_2^2$ + $x_2^3$ $\leq$ 5
 \\ \\ 
-\textbf{max} ( \TextSoulign{green}{ }{2} - \TextSoulign{red}{ }{5} ) $x_2^1$ + (\TextSoulign{green}{ }{10} - \TextSoulign{red}{ }{15} ) $x_2^2$ + (\TextSoulign{green}{ }{5} - 0) $x_2^3$
+\textbf{max} ( \TextSoulign{green}{ }{2} - \TextSoulign{red}{ }{5} ) $x_2^1$ + (\TextSoulign{green}{ }{10} - \TextSoulign{red}{ }{15} ) $x_2^2$ + (\TextSoulign{green}{ }{5} - \TextSoulign{black}{ }{5}) $x_2^3$
 \\
-\\ Il existe une solution : (0, 0, 1)  avec comme coeffficient 5.
+Encore une fois tout les coefficiens sont nuls ou négatifs, il n y a pas de nouvelles solution.
 }
 \end{itemize}
+
+Si il n'existe aucune nouvelle solution apporté, il n'existe pas d'autres solutions optimal, elle a déjà été trouvée. La colonne rajoutée n'améliore finalement en rien.
+\\
+La solution optimal est :
+\begin{itemize}
+\item{(1, 0, 0) associé à la machine 1}
+\item{(0, 1, 1) associé à la machine 2}
+\end{itemize}
+
+
 
 
 
