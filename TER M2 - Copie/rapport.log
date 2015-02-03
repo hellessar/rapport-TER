@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.3)  3 FEB 2015 19:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.3)  3 FEB 2015 15:17
 entering extended mode
 **C:/Users/Véro*2/Documents/GitHub/rapport-TER/TER*M2/rapport.tex
 ("C:/Users/Véro 2/Documents/GitHub/rapport-TER/TER M2/rapport.tex"
@@ -756,21 +756,6 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Package tocbasic Info: character protrusion at toc deactivated on input line 10
-2.
-
-("C:\Users\Véro 2\Documents\GitHub\rapport-TER\TER M2\rapport.toc")
-\tf@toc=\write4
-Package microtype Info: Loading generic settings for font family
-(microtype)             `cmtt' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [1
-
-
-
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 ("C:\Users\Véro 2\Documents\GitHub\rapport-TER\TER M2\gencol.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 4--10
 
@@ -782,76 +767,70 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--10
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--41
+Underfull \hbox (badness 10000) in paragraph at lines 39--51
 
  []
 
 
-Overfull \hbox (227.08844pt too wide) in paragraph at lines 42--71
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 39--51
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--76
+Underfull \hbox (badness 10000) in paragraph at lines 39--51
+
+ []
+
+Package microtype Info: Loading generic settings for font family
+(microtype)             `cmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+[1
+
+
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 54--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--84
+
+ []
+
+
+Overfull \hbox (28.08301pt too wide) in paragraph at lines 60--84
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--92
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 77--82
+Underfull \hbox (badness 10000) in paragraph at lines 93--100
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--82
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--89
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--89
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--89
-
- []
-
-
-Overfull \hbox (39.03304pt too wide) in paragraph at lines 90--105
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--115
-
- []
-
-[3])
-Underfull \hbox (badness 10000) in paragraph at lines 116--108
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--108
-
- []
-
-("C:\Users\Véro 2\Documents\GitHub\rapport-TER\TER M2\branchprice.tex"
+) ("C:\Users\Véro 2\Documents\GitHub\rapport-TER\TER M2\branchprice.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 41--42
 []\OT1/cmr/m/n/10.95 (+20) Capacite
  []
@@ -861,7 +840,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--58
 
  []
 
-[4]
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 59--67
 
  []
@@ -918,7 +897,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--121
 
  []
 
-[5]
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 123--133
 
  []
@@ -943,7 +922,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--178
 
  []
 
-[6]
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 180--188
 
  []
@@ -968,16 +947,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--202
 
  []
 
-) [7] ("C:\Users\Véro 2\Documents\GitHub\rapport-TER\TER M2\biblio.tex")
-[8] ("C:\Users\Véro 2\Documents\GitHub\rapport-TER\TER M2\rapport.aux") ) 
+) ("C:\Users\Véro 2\Documents\GitHub\rapport-TER\TER M2\biblio.tex" [6])
+[7] ("C:\Users\Véro 2\Documents\GitHub\rapport-TER\TER M2\rapport.aux") ) 
 Here is how much of TeX's memory you used:
- 7992 strings out of 493921
- 125718 string characters out of 3144924
- 274113 words of memory out of 3000000
- 11058 multiletter control sequences out of 15000+200000
- 26972 words of font info for 98 fonts, out of 3000000 for 9000
+ 7985 strings out of 493921
+ 125359 string characters out of 3144924
+ 274123 words of memory out of 3000000
+ 11048 multiletter control sequences out of 15000+200000
+ 27299 words of font info for 101 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 54i,19n,47p,466b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 54i,16n,47p,466b,390s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/P
 rogram Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Program Files (x8
@@ -990,15 +969,15 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmtt10.pfb>
-Output written on rapport.pdf (8 pages, 209152 bytes).
+amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
+sfonts/latxfont/line10.pfb>
+Output written on rapport.pdf (7 pages, 199081 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 91 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 22529 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 24577 words of extra memory for PDF output out of 24883 (max. 10000000)
 

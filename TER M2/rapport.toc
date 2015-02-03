@@ -1,0 +1,10 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}R\IeC {\'e}solution de programmes lin\IeC {\'e}aires}{2}
+\contentsline {subsection}{\numberline {1.1}G\IeC {\'e}n\IeC {\'e}ration de colonnes}{2}
+\contentsline {subsubsection}{\numberline {1.1.1}Les outils}{2}
+\contentsline {subsubsubsection}{\numberline {1.1.1.a}Dualit\IeC {\'e}}{2}
+\contentsline {subsubsubsection}{\numberline {1.1.1.b}Co\IeC {\^u}ts r\IeC {\'e}duits}{2}
+\contentsline {subsubsection}{\numberline {1.1.2}La m\IeC {\'e}thode}{3}
+\contentsline {subsection}{\numberline {1.2}Branch and Price}{4}
+\contentsline {subsubsection}{\numberline {1.2.1}Principe g\IeC {\'e}n\IeC {\'e}ral}{4}
+\contentsline {subsubsection}{\numberline {1.2.2}exemple}{4}

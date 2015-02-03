@@ -43,10 +43,9 @@
 \usepackage{subfig}																		% Subfigures
 \usepackage{booktabs}																	% Nicer tables
 \usepackage{wrapfig} 
-\usepackage{ulem}
+
 %%% Advanced verbatim environment
 \usepackage{verbatim}
-\usepackage{multicol}
 \usepackage{fancyvrb}
 \usepackage[utf8]{inputenc}
 \DefineShortVerb{\|}								% delimiter to display inline verbatim text
@@ -74,7 +73,7 @@
 \renewcommand{\headrulewidth}{0pt}				% Remove header underlines
 \renewcommand{\footrulewidth}{0pt}				% Remove footer underlines
 \setlength{\headheight}{13.6pt}
-\newcommand{\TextSoulign}[3]{\textcolor{#1}{\underline{#2\textcolor{black}{#3}}}}
+
 
 
 %%% Equation and float numbering
@@ -92,6 +91,7 @@
 	\usefont{OT1}{bch}{m}{n} David Aubert\\		
 	\usefont{OT1}{bch}{m}{n} Deguilhem Julien\\		
 	\usefont{OT1}{bch}{m}{n}Université de  Montpellier II\\	
+	\usefont{OT1}{bch}{m}{n}Rapport préliminaire Master II\\
 }
 \date{20 jan 2015}
 
@@ -99,20 +99,7 @@
 %%% Begin document
 \begin{document}
 \maketitle
-\tableofcontents
-\newpage
-\section{Résolution de programmes linéaires}
 
-\subsection{Génération de colonnes}
-\input{gencol}
-
-\subsection{Branch and Price}
-\input{branchprice}
-
-\newpage
-\input{biblio}
-
-\iffalse
 \section{Génération de colonne}
 \begin{hspace}{1cm}
 La génération
@@ -137,5 +124,5 @@ Ensuite il faudra se décider entre la programmation linéaire, dynamique et par
 des manières de construire un arbre de Steiner serait en suivant l'exemple de la sélection naturelle. Il faudrait construire un réseau génétique afin de faire hériter à chague génération les meilleurs éléments de la précédente. En effet cela semble être une méthode efficace et naturel. De plus, cela semblerait correspondre au type de programmation choisi, pour le moment dynamique.
 \newline
 Il faudra pouvoir trouver une heuristique efficace pour générer un ensemble déjà suffisament adapté afin de trouver un nombre de génération d'individu minimal.
-\fi
+
 \end{document}

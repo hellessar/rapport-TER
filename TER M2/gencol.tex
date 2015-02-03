@@ -1,7 +1,7 @@
 \subsubsection{Les outils}
-La génération de colonnes est une technique utlisée pour résoudre un programme linéaire en nombre réels, lorsque les variables sont trop nombreuses pour être toutes énumérées ou pour une résolution directe par un solveur. La génération de colonnes utilise en autres, la solution duale et les coûts réduits. \cite{introBCBP}
+La génération de colonnes est une technique utilisée pour résoudre un programme linéaire en nombre réels, lorsque les variables sont trop nombreuses pour être toutes énumérées ou pour une résolution directe par un solveur. La génération de colonnes utilise en autres, la solution duale et les coûts réduits. \cite{introBCBP}
 \subsubsubsection{Dualité}
-Pour un problème linéaire apellé \textit{Primal}, le Dual est la ''\textit{transposée}'' du \textit{Primal}: les variables du Primal deviennent les constantes du Dual et vice et versa. \\
+Pour un problème linéaire apelé \textit{Primal}, le Dual est la ''\textit{transposée}'' du \textit{Primal}: les variables du Primal deviennent les constantes du Dual et vice et versa. \\
 Le problème de maximisation du primal est le problème de minimisation du dual et réciproquement.
 \newline
 \\
@@ -38,6 +38,17 @@ u_i \geq 0\\
 
 Pour résoudre un PL, donné par une matrice de contrainte A il faut une base B. Tel que pour un problème de minimisation il y ait:
 \newline
+
+\begin{tabular}{ l p{5 cm}l p{5 cm}  l p{5 cm} l}
+ Le problème initial :& & On réécrit ce problème avec la base B: \\
+Minimiser $cx$ sous & & Minimiser $c_B.x_B + c_N.x_N =d$ sous\\
+$\left\lbrace
+\begin{array}{l}
+A\textit{x = d} \\
+\textit{ $x \geq 0$}
+\end{array}
+\right.$ & &
+=======
 \newline
 \hspace{2.5cm}Minimiser $cx$ sous\\
 \hspace*{2.5cm} A\textit{x = d} \\
@@ -49,53 +60,65 @@ On réécrit ce problème avec la base B:\\
 \hspace{2.5cm}$B.x_B + N.x_N =d$\\
 \hspace{2.5cm}\textit{ $x_B \geq 0$},\textit{ $x_N \geq 0$}\\
 
-Où $N$ est la matrice qui complete $B$ pour reformer $A$, $x_B$ les variables en base ( Les colonnes choisis dans A pour former B) et  $x_N$ les variables hors-base.
 
-Ici, il est possible de transformer les contraintes d'inégalités en égalités avec l'ajout de variables d'écarts. On les ajoute négativement pour une inégalité "superieur à" et inversement.\\
+$\left\lbrace
+\begin{array}{l}
+B.x_B + N.x_N =d\\
+x_B \geq 0, x_N \geq 0\\
+\end{array}
+\right.$\\ 
+\end{tabular}
+
+Où :\\
+\textit{$N$ est la matrice qui complète $B$ pour reformer $A$,\\
+$x_B$ les variables en base (Les colonnes choisis dans A pour former B)\\
+et  $x_N$ les variables hors-base.\\}
+
+Ici, il est possible de transformer les contraintes d'inégalités en égalités avec l'ajout de variables d'écarts. On les ajoute négativement pour une inégalité "supérieur à" et inversement.\\
 \\
 Pour chaque variables d'écarts, il y a un coût: \textit{$c_j$} \textit{(Coût associé à la variable d'écart j)}.
 Son coût réduit est l'écart qu'il y a entre le coût associé à la variable hors-base $x_j$ et les variables duales en base pour la contrainte $j$.\\
-$c_j = c_j - c_B.B^{-1}.A_j$\\
+\hspace*{2.5cm}$c_j = c_j - c_B.B^{-1}.A_j$\\
 
 Calculer le coût réduit revient à donner "de combien" peut s'améliorer la fonction objective si on relâche la contrainte $j$ d'une unité.
 \newline
 \\
-\underline{\textit{Exemple}} : 
+\underline{\textit{Exemple}} : \\
 \\
 En suivant l'exemple précédent, on y ajoute les variables d'écart $x_3$ $x_4$ et $x_5$ :\\
+
 \begin{tabular}{ p{5 cm}p{3 cm}p{3 cm}p{3 cm}}
  \hline
 Problème Primal  & solution & solution duale & coûts réduits \\
  \hline
-$Min{ - x_1 + 4x_2}$ & $x_1 = 7$ & $u_1 = 5$ & $c_3 = 5$\\
-$-x_1 -x_3 \geq -7$ 
-&
-$x_2 = -2$
-&
-$u_2 = 0$
-&
-$c_4 = 0$\\
-$3x_1-2x_2 -x-4 \geq 4$
-
-$x_1+x_2 -x_5 \geq 5$ & $x_4 = 21$ & $u_3 = 4$ & $c_5 = 4$\\
+$Min\{-x_1 + 4x_2\} \newline$
+$\left\lbrace
+\begin{array}{l}
+-x_1 -x_3\geq -7\\
+3x_1-2x_2 -x -4\geq 4\\
+x_1+x_2 -x_5 \geq 5\\
+\end{array}
+\right.$
+& $x_1 = 7 \newline x_2 = -2 \newline x_4 = 21$ & $u_1 = 5 \newline u_2 = 0 \newline u_3 = 4$ & $c_3 = 5 \newline c_4 = 0 \newline c_5 = 4$ \\
  \hline
 \end{tabular}
+
 $x_1$,$x_2$ et $x_4$ sont les variables en base.
 \subsubsection{La méthode}
-La génération de colonnes fonctionne sur un problème en nombre réels (Pas de PLNE). Elle est utilisé quand le PL possède un très grand nombre de variable. L'idée etant de résoudre le problème maitre en ne prenant en compte qu'un nombre restreint et suffisant de variables.\\
+La génération de colonnes fonctionne sur un problème en nombre réels (Pas de PLNE). Elle est utilisé quand le PL possède un très grand nombre de variable. L'idée étant de résoudre le problème maitre en ne prenant en compte qu'un nombre restreint et suffisant de variables.\\
 
-On commence par générer un PL à partir du problème maitre, qu'on va appeler problème maitre restreint (PMR). Le choix de se problème doit se faire de manière heuristique pour optimiser le développement de l'algorithme. Puis on va générer des variables améliorantes susceptibles d'améliorer le résultat.\\
+On commence par générer un PL à partir du problème maitre, qu'on va appeler problème maitre restreint (PMR). Le choix de ce problème doit se faire de manière heuristique pour optimiser le développement de l'algorithme. Puis on va générer des variables améliorantes susceptibles d'améliorer le résultat.\\
 
-Pour les trouver, on va s'interresser au problème dual et on va regarder les coûts réduits. En effet, le coût des variables duales va nous permettre de trouver une ou plusieurs variables améiorantes.
+Pour les trouver, on va s'intéresser  au problème dual et on va regarder les coûts réduits. En effet, le coût des variables duales va nous permettre de trouver une ou plusieurs variables améliorantes.
 Rappelons comment obtenir le coût :\\
-$c_i = c_i - c_B.B^{-1}.A_i = c_i - u_B.A_i = c_i - sum_{j=1}^{m}{u_j A_{ij}}$\\
+\hspace*{2.5cm}$c_i = c_i - c_B.B^{-1}.A_i = c_i - u_B.A_i = c_i - sum_{j=1}^{m}{u_j A_{ij}}$\\
 
 avec :\\
-$u_i$ la variable duale associée à la contrainte j.\\
-$a_{ij}$ le coéfficient de la variable i dans la contraite j.\\
-$m$ le nombre de contraintes.\\
+\textit{$u_i$ la variable duale associée à la contrainte j.\\
+$a_{ij}$ le coefficient de la variable i dans la contrainte j.\\
+$m$ le nombre de contraintes.\\}
 \\
 Dans un problème de maximisation :\\
-la solution optimale s'obtient si tous les coûts réduits sont négatifs. Si ce n'est pas le cas alors on génère de nouvelle(s) variable(s) améliorantes à partir de cette solution pour obtenir un nouveau PMR et recommencer. Les variables ajoutés sont idéalements celles qui n'ont pas encore été insérées dans le problème et qui ont un coût réduit positif.
-
+la solution optimale s'obtient si tous les coûts réduits sont négatifs. Si ce n'est pas le cas alors on génère de nouvelle(s) variable(s) améliorantes à partir de cette solution pour obtenir un nouveau PMR et recommencer. Les variables ajoutées sont idéalement celles qui n'ont pas encore été insérées dans le problème et qui ont un coût réduit positif.\\
+\\
 Dans un problème de minimisation, le problème est le même mais on inverse coût réduit positif et coût réduit négatif.
