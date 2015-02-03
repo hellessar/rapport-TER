@@ -40,27 +40,15 @@ Pour résoudre un PL, donné par une matrice de contrainte A il faut une base B.
 \newline
 
 \begin{tabular}{ l p{5 cm}l p{5 cm}  l p{5 cm} l}
- Le problème initial :& & On réécrit ce problème avec la base B: \\
+ Le problème initial (puke) & On réécrit ce problème avec la base B: \\
 Minimiser $cx$ sous & & Minimiser $c_B.x_B + c_N.x_N =d$ sous\\
 $\left\lbrace
 \begin{array}{l}
 A\textit{x = d} \\
 \textit{ $x \geq 0$}
 \end{array}
-\right.$ & &
-=======
-\newline
-\hspace{2.5cm}Minimiser $cx$ sous\\
-\hspace*{2.5cm} A\textit{x = d} \\
-\hspace*{2.5cm}\textit{ $x \geq 0$}
-\\
-\\
-On réécrit ce problème avec la base B:\\
-\hspace{2.5cm}Minimiser $c_B.x_B + c_N.x_N =d$ sous\\
-\hspace{2.5cm}$B.x_B + N.x_N =d$\\
-\hspace{2.5cm}\textit{ $x_B \geq 0$},\textit{ $x_N \geq 0$}\\
-
-
+\right.$
+& &
 $\left\lbrace
 \begin{array}{l}
 B.x_B + N.x_N =d\\
@@ -69,6 +57,7 @@ x_B \geq 0, x_N \geq 0\\
 \right.$\\ 
 \end{tabular}
 
+\vspace*{0.5cm}
 Où :\\
 \textit{$N$ est la matrice qui complète $B$ pour reformer $A$,\\
 $x_B$ les variables en base (Les colonnes choisis dans A pour former B)\\

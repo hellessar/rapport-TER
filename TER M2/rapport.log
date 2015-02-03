@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.3)  3 FEB 2015 19:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.3)  3 FEB 2015 19:44
 entering extended mode
 **C:/Users/Véro*2/Documents/GitHub/rapport-TER/TER*M2/rapport.tex
 ("C:/Users/Véro 2/Documents/GitHub/rapport-TER/TER M2/rapport.tex"
@@ -787,71 +787,71 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--41
  []
 
 
-Overfull \hbox (227.08844pt too wide) in paragraph at lines 42--71
+Overfull \hbox (64.36809pt too wide) in paragraph at lines 42--59
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--76
+Underfull \hbox (badness 10000) in paragraph at lines 61--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--71
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--71
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 77--82
+Underfull \hbox (badness 10000) in paragraph at lines 72--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--82
+Underfull \hbox (badness 10000) in paragraph at lines 72--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--89
+Underfull \hbox (badness 10000) in paragraph at lines 72--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--89
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--89
-
- []
-
-
-Overfull \hbox (39.03304pt too wide) in paragraph at lines 90--105
+Overfull \hbox (39.03304pt too wide) in paragraph at lines 79--94
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--115
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
 
  []
 
-[3])
-Underfull \hbox (badness 10000) in paragraph at lines 116--108
+)
+Underfull \hbox (badness 10000) in paragraph at lines 105--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--108
+Underfull \hbox (badness 10000) in paragraph at lines 105--108
 
  []
 
-("C:\Users\Véro 2\Documents\GitHub\rapport-TER\TER M2\branchprice.tex"
+[3] ("C:\Users\Véro 2\Documents\GitHub\rapport-TER\TER M2\branchprice.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 41--42
 []\OT1/cmr/m/n/10.95 (+20) Capacite
  []
@@ -861,17 +861,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--58
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--67
+
+ []
+
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 59--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--67
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 68--71
 
  []
@@ -943,22 +943,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--178
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--188
+
+ []
+
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 180--188
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--188
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--188
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 192--202
 
  []
@@ -977,7 +977,7 @@ Here is how much of TeX's memory you used:
  11058 multiletter control sequences out of 15000+200000
  26972 words of font info for 98 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 54i,19n,47p,466b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 54i,19n,47p,466b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/P
 rogram Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Program Files (x8
@@ -996,7 +996,7 @@ e1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 blic/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmtt10.pfb>
-Output written on rapport.pdf (8 pages, 209152 bytes).
+Output written on rapport.pdf (8 pages, 209263 bytes).
 PDF statistics:
  94 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
