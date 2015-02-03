@@ -9,10 +9,11 @@ Lorsque tout les \textbf{\textit{sous-problèmes}} générés admettent une solu
 
 
 \subsubsection{exemple}
-
+\begin{center}
+\begin{tabular}{c p{3cm} c}
 \begin{tabular}{  p{2.5cm} c c c}
 \hline
-\textbf{Job}\textit{(i)} \\
+\textbf{Job}\textit{(i)} \\demandé \\
 \hline
  & 1 & 2 & 3 \\
  \hline
@@ -22,7 +23,7 @@ Machine \textit{i} = 2 & 2 & 10 & 5 \\
 \end{tabular}
 
 \vspace{1cm}
-
+& &
 \begin{tabular}{c c}
 \hline
 \textit{i} & $C_\textit{i}$\\
@@ -32,12 +33,13 @@ Machine \textit{i} = 2 & 2 & 10 & 5 \\
 2 & 8\\
 \hline
 \end{tabular}
+\end{tabular}
 
 \vspace{1cm}
 
 \begin{tabular}{  p{2.5cm} c c c}
 \hline
-\textbf{Job}\textit{(i)} \\
+Capacité \textbf{Job}\textit{(i)} \\
 \hline
  & 1 & 2 & 3 \\
  \hline
@@ -45,7 +47,7 @@ Machine \textit{i} = 1 & 3 & 5 & 2 \\
 Machine \textit{i} = 2 & 4 & 3 & 4 \\
 \hline
 \end{tabular}
-
+\end{center}
 \vspace{1cm}
 
 Soit \textit{$k_1$} et \textit{$k_2$} l'ensemble des solutions possibles pour les machines 1 et 2 tel que
@@ -58,7 +60,7 @@ Le \textbf{\textit{Master Problem}} pourra être representé comme ci-suit:
 \textbf{max} z = 5$y_1^1$ + 7$y_1^2$ + 3$y_1^3$ + 8$y_1^4$ + 2$y_2^1$+10$y_2^2$ + 5$y_2^3$ + 12$y_2^4$+15$y_2^5$
 \\ \\
 Voici une décomposition par job: \\
-$y_1^1$ + 0 + 0 +$y_1^4$ + 0 + 0 + $y_2^4$ + 0 = 1 (\textit{$u_1$}) \\
+$y_1^1$ + 0 + 0 +$y_1^4$ + $y_2^1$  + 0 + $y_2^4$ + 0 = 1 (\textit{$u_1$}) \\
 0 + $y_1^2$ + 0 + 0 + 0 + $y_2^2$ + 0 + $y_2^4$ + $y_2^5$ = 1 (\textit{$u_2$}) \\
 0 + 0 + $y_1^3$ + $y_1^4$ + 0 + 0 + $y_2^3$ + 0 + $y_2^5$ = 1     (\textit{$u_3$}) \\
 

@@ -86,4 +86,16 @@ La génération de colonnes fonctionne sur un problème en nombre réels (Pas de
 
 On commence par générer un PL à partir du problème maitre, qu'on va appeler problème maitre restreint (PMR). Le choix de se problème doit se faire de manière heuristique pour optimiser le développement de l'algorithme. Puis on va générer des variables améliorantes susceptibles d'améliorer le résultat.\\
 
-Pour les trouver, on va s'interresser au problème dual et on va regarder les coûts réduits. Dans un problème de maximisation, la solution optimale s'obtient s'il sont tous négatifs (Et inversement). Si ce n'est pas le cas alors on génère de nouvelle(s) variable(s) à partir de cette solution pour obtenir un nouveau PMR et recommencer.
+Pour les trouver, on va s'interresser au problème dual et on va regarder les coûts réduits. En effet, le coût des variables duales va nous permettre de trouver une ou plusieurs variables améiorantes.
+Rappelons comment obtenir le coût :\\
+$c_i = c_i - c_B.B^{-1}.A_i = c_i - u_B.A_i = c_i - sum_{j=1}^{m}{u_j A_{ij}}$\\
+
+avec :\\
+$u_i$ la variable duale associée à la contrainte j.\\
+$a_{ij}$ le coéfficient de la variable i dans la contraite j.\\
+$m$ le nombre de contraintes.\\
+\\
+Dans un problème de maximisation :\\
+la solution optimale s'obtient si tous les coûts réduits sont négatifs. Si ce n'est pas le cas alors on génère de nouvelle(s) variable(s) améliorantes à partir de cette solution pour obtenir un nouveau PMR et recommencer. Les variables ajoutés sont idéalements celles qui n'ont pas encore été insérées dans le problème et qui ont un coût réduit positif.
+
+Dans un problème de minimisation, le problème est le même mais on inverse coût réduit positif et coût réduit négatif.
