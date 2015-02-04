@@ -1,19 +1,19 @@
 \subsubsection{Principe général}
 Un algorithme de branch and Price est l'équivalent d'un algorithme de Branch and Bound et de génération de colonnes. \\
-La différence se fait par incrémentation. A chaque noeud, une résolution de PL. De ce fait on ne garantit pas à chaque noeud une solution optimal ou même valide. 
+La différence se fait par incrémentation. A chaque noeud, une résolution de PL. Ainsi, on ne garantit pas à chaque noeud une solution optimale ou même valide. 
 \\
-La première étape d'un branch and price est de générer ce qui s'appele le \textbf{\textit{Master Problem}}.\\
+La première étape d'un textit{branch and price} est de générer ce qui s'appele le \textbf{\textit{Master Problem}}.\\
 De ce \textbf{\textit{Master Problem}} devront être générés des \textbf{\textit{sous-problèmes}}. \\
-Chaque \textbf{\textit{sous-problèmes}} sera résolu et à chaque itération, une résolution de PL sera effectué et chaque solution entrainera une génération de colonne et sera rajouté à la solution. \\
-Lorsque tout les \textbf{\textit{sous-problèmes}} générés admettent une solution entièrement négative c'est la fin de l'algorithme.
+Chaque \textbf{\textit{sous-problème}} sera résolu et à chaque itération, une résolution de PL sera effectuée et chaque solution entrainera une génération de colonne et sera rajoutée à la solution. \\
+Lorsque tous les \textbf{\textit{sous-problèmes}} générés admettent une solution entièrement négative c'est la fin de l'algorithme.
 
 
-\subsubsection{exemple}
+\subsubsection{Exemple}
 \begin{center}
 \begin{tabular}{ ccc}
-\begin{tabular}{  p{2.5cm} c c c}
+\begin{tabular}{  c c c c}
 \hline
-\textbf{Job}\textit{(i)} \\demandé \\
+\multicolumn{2}{c}{\textbf{Job}\textit{(i)} demandé} \\
 \hline
  & 1 & 2 & 3 \\
  \hline
@@ -22,7 +22,6 @@ Machine \textit{i} = 2 & 2 & 10 & 5 \\
 \hline
 \end{tabular}
 
-\vspace{1cm}
 & &
 \begin{tabular}{c c}
 \hline
@@ -34,11 +33,10 @@ Machine \textit{i} = 2 & 2 & 10 & 5 \\
 \hline
 \end{tabular}
 
-\vspace{1cm}
 
-\begin{tabular}{  p{2.5cm} c c c}
+\begin{tabular}{  c c c c}
 \hline
-Capacité \textbf{Job}\textit{(i)} \\
+\multicolumn{3}{c}{Capacité \textbf{Job}\textit{(i)}} \\
 \hline
  & 1 & 2 & 3 \\
  \hline
@@ -51,28 +49,28 @@ Machine \textit{i} = 2 & 4 & 3 & 4 \\
 \end{center}
 \vspace{1cm}
 
-Soit \textit{$k_1$} et \textit{$k_2$} l'ensemble des solutions possibles pour les machines 1 et 2 tel que
+Soit \textit{$k_1$} et \textit{$k_2$} l'ensemble des solutions possibles pour les machines 1 et 2 telles que :
 \\
 \textit{$k_1$} = { (1,0,0), (0,1,0), (0,0,1), (1,0,1)} \\
 \textit{$k_2$} = {  (1,0,0), (0,1,0), (0,0,1), (1,1,0), (0,1,1)} \\ 
 
-Le \textbf{\textit{Master Problem}} pourra être representé comme ci-suit:
+Le \textbf{\textit{Master Problem}} pourra être representé comme ce qui suit:
 \\
 \textbf{max} z = 5$y_1^1$ + 7$y_1^2$ + 3$y_1^3$ + 8$y_1^4$ + 2$y_2^1$+10$y_2^2$ + 5$y_2^3$ + 12$y_2^4$+15$y_2^5$
 \\ \\
-Voici une décomposition par job: \\
+Voici une décomposition par jobs : \\
 $y_1^1$ + 0 + 0 +$y_1^4$ + $y_2^1$  + 0 + $y_2^4$ + 0 = 1 (\textit{$u_1$}) \\
 0 + $y_1^2$ + 0 + 0 + 0 + $y_2^2$ + 0 + $y_2^4$ + $y_2^5$ = 1 (\textit{$u_2$}) \\
 0 + 0 + $y_1^3$ + $y_1^4$ + 0 + 0 + $y_2^3$ + 0 + $y_2^5$ = 1     (\textit{$u_3$}) \\
 
-Ici au lieu d'exprimer les \textbf{Machines} par \textbf{Job}, est exprimé les \textbf{Job} par \textbf{Machines}. C'est le Dual.\\
+Ici, au lieu d'exprimer les \textbf{Machines} par \textbf{Jobs}, est exprimé les \textbf{Jobs} par \textbf{Machines}, c'est le Dual :\\
 $y_1^1$ + $y_1^2$ + $y_1^3$ + $y_1^4$ $\leq$ 1 (\textit{$v_1$}) \\
 $y_2^1$ + $y_2^2$ + $y_2^3$ + $y_2^4$ $\leq$ 1 (\textit{$v_2$}) \\
 
-La prochaine étape est de choisir un ensemble de solution réalisable. Dans notre cas; le choix est relativement facile, mais un domaine d'étude intéressant est l'optimisation de ce choix, trouver rapidement une solution réalisable efficace pour les problèmes plus difficile.
+La prochaine étape est de choisir un ensemble de solutions réalisables. Dans notre cas, le choix est relativement facile. Mais un domaine d'étude intéressant est l'optimisation de ce choix : trouver rapidement une solution réalisable efficace pour les problèmes plus difficiles.
 \\
 \\
-Dans cet exemple, $y_1^1$ et $y_2^5$ seront choisis (arbitrairement). De ce fait voici le nouveau \textbf{\textit{Master Problem restricted}} (RMP) : \\
+Dans cet exemple, $y_1^1$ et $y_2^5$ seront choisis (arbitrairement). Voici donc, le nouveau \textbf{\textit{Master Problem restricted}} (RMP) : \\
 \textbf{max} \textit{z} = 5$y_1^1$  + 15$y_2^5$ 
 \\ \\
 \begin{tabular}{c c }
@@ -84,7 +82,7 @@ $y_1^1$  + 0 = 1 & \\
 \end{tabular} 
 
 \vspace{0.5cm}
-Voici la matrice de Base B et son inverse: 
+Voici la matrice de Base $B$ et son inverse : 
 \\
 
 \begin{center}
@@ -102,25 +100,25 @@ $B^{-1}$=$\begin{bmatrix}
 \end{center}
 
 
-$y_1^1$ est pour rappel, la variable d'éxécution de la tâche 1 sur la machine 1 son coefficient est de 5. \\
-$y_2^5$ est la variable pour le travail sur la machine 2 de la tâche 2 \textbf{et} 3 de ce fait il représente la somme de ces deux coefficients : 10 et 5. \\
+$y_1^1$ est, pour rappel, la variable d'éxécution de la tâche 1 sur la machine 1. Son coefficient est de 5. \\
+$y_2^5$ est la variable pour le travail sur la machine 2 de la tâche 2 \textbf{et} 3, il représente la somme de ces deux coefficients : 10 et 5. \\
 
-De ce fait, pour le moment, la meilleur solution est \textit{$u_1$} = \TextSoulign{red}{ }{ 5},  \textit{$u_2$} = \TextSoulign{red}{ }{15}, \textit{$v_1$} = 0, \textit{$v_2$} = 0.    \\
+Pour le moment, la meilleure solution est \textit{$u_1$} = \TextSoulign{red}{ }{ 5},  \textit{$u_2$} = \TextSoulign{red}{ }{15}, \textit{$v_1$} = 0, \textit{$v_2$} = 0.    \\
 
-Nous allons décomposer les sous problèmes par machine:
+Nous allons décomposer les sous-problèmes par machine :
 \begin{itemize}
 \item{
-Sous problème machine 1 : \\ \\ 
+Sous-problème machine 1 : \\ \\ 
 \textit{\underline{Rappel:}}  Tâches demandées pour Machine 1 =  \TextSoulign{blue}{ }{ 5}$x_1^1$ + \TextSoulign{blue}{ }{ 7}$x_1^2$ + \TextSoulign{blue}{ }{3}$x_1^3$  \\ 
 Capacité Machine 1 = 3$x_1^1$ + 4$x_1^2$ + $x_1^3$ $\leq$ 5
 \\ \\ 
-\textbf{max} ( \TextSoulign{blue}{ }{ 5} - \TextSoulign{red}{ }{5} ) $x_1^1$ + (\TextSoulign{blue}{ }{ 7} - \TextSoulign{red}{ }{15} ) $x_1^2$ + (\TextSoulign{blue}{ }{3} - 0) $x_1^3$
+\textbf{max} ( \TextSoulign{blue}{ }{ 5} - \TextSoulign{red}{ }{5} ) $x_1^1$ + (\TextSoulign{blue}{ }{ 7} - \TextSoulign{red}{ }{15} ) $x_1^2$ + (\TextSoulign{blue}{ }{3} - 0) $x_1^3$\\
 \\
- Le coefficient $x_1^2$ étant négatif, il exclut toute solution avec lui dedans et (1, 0, 0) étant nul ce ne sera pas une solution optimal. Quel que soit la solution optimal choisi le max des coefficients sera 3. 
+ Le coefficient $x_1^2$ étant négatif, il exclut toute solution avec lui dedans et (1, 0, 0) étant nulle, ce ne sera pas une solution optimale. Quelle que soit la solution optimale choisi, le max des coefficients sera 3.
 }
 
 \item{
-Sous problème machine 2: 
+Sous-problème machine 2: 
 \\
 \\
 \textit{\underline{Rappel:}}  Tâches demandées pour Machine 2 =  \TextSoulign{green}{ }{2}$x_2^1$ + \TextSoulign{green}{ }{10}$x_2^2$ + \TextSoulign{green}{ }{5}$x_2^3$  \\ 
@@ -128,13 +126,13 @@ Capacité Machine 2 = 3$x_2^1$ + 4$x_2^2$ + $x_2^3$ $\leq$ 5
 \\ \\ 
 \textbf{max} ( \TextSoulign{green}{ }{2} - \TextSoulign{red}{ }{5} ) $x_2^1$ + (\TextSoulign{green}{ }{10} - \TextSoulign{red}{ }{15} ) $x_2^2$ + (\TextSoulign{green}{ }{5} - 0) $x_2^3$
 \\
-\\ Il existe une solution : (0, 0, 1) car $x_1^2$  et $x_1^1$  étant négatif, ils sont exclus de la solution. Le coefficient maximum possible sera 5.
+\\ Il existe une solution : (0, 0, 1) car $x_1^2$  et $x_1^1$  étant négatifs, ils sont exclus de la solution. Le coefficient maximum possible sera 5.
 }
 \end{itemize}
 
-Maintenant que les deux problèmes ont été résolu, le \textbf{MPR} va être complété. Des deux solutions le sous problème 2 est celui avec le plus gros coefficient, ce qui représente la plus grosse maximisation.
+Maintenant que les deux problèmes ont été résolus, le \textbf{MPR} va être complété. Des deux solutions, le sous-problème 2 est celui avec le plus gros coefficient. Ce qui représente la plus grosse maximisation.
 \\
-C'est à dire 5 du sous problème 2 : 5 avec comme solution (0, 0, 1) qui correspond à $y_2^3$. C'est la génération de colonne : une solution vient d'être trouvé et va implémenter notre solution final.
+C'est donc le coefficient 5 du sous-problème 2, avec comme solution (0, 0, 1) qui correspond à $y_2^3$. C'est la génération de colonne : une solution vient d'être trouvée et va implémenter notre solution finale.
 \\ \\ 
 Le nouveau \textbf{RMP} passe de :
 \begin{center}
@@ -142,7 +140,7 @@ Le nouveau \textbf{RMP} passe de :
  5$y_1^1$  + 15$y_2^5$ +   \TextSoulign{black}{ }{5}$y_2^3$
 \end{center}
 
-Voici la nouvelle décomposition :
+À cette nouvelle décomposition :
 
 \begin{tabular}{cc}
 $y_1^1$  + 0 + 0 = 1 & \\
@@ -168,28 +166,28 @@ $B^{-1}$=$\begin{bmatrix}
 \end{tabular}
 \end{center}
 
-De ce fait comme la dernière fois on se retrouve avec une matrice identité et les coefficients restent inchangés. \\
-La \textit{$''nouvelle''$} meilleur solution est \textit{$u_1$} = \TextSoulign{red}{ }{ 5},  \textit{$u_2$} = \TextSoulign{red}{ }{15}, \textit{$u_3$} = \TextSoulign{black}{ }{5}, \textit{$v_1$} = 0, \textit{$v_2$} = 0.    
+Comme la dernière fois, on se retrouve avec une matrice identité et les coefficients restent inchangés. \\
+La \textit{$''nouvelle''$} meilleure solution est \textit{$u_1$} = \TextSoulign{red}{ }{ 5},  \textit{$u_2$} = \TextSoulign{red}{ }{15}, \textit{$u_3$} = \TextSoulign{black}{ }{5}, \textit{$v_1$} = 0, \textit{$v_2$} = 0.    
 \\
-De là, il faudra à nouveau décomposer en sous problème par machine
+Il faudra à nouveau décomposer en sous-problèmes par machine.
 \\
 Nous aurons donc : 
 \\
 \begin{itemize}
 \item{
-Sous problème machine 1 : \\ \\ 
+Sous-problème machine 1 : \\ \\ 
 \textit{\underline{Rappel:}}  Tâches demandées pour Machine 1 =  \TextSoulign{blue}{ }{ 5}$x_1^1$ + \TextSoulign{blue}{ }{ 7}$x_1^2$ + \TextSoulign{blue}{ }{3}$x_1^3$  \\ 
 Capacité Machine 1 = 3$x_1^1$ + 4$x_1^2$ + $x_1^3$ $\leq$ 5
 \\ \\ 
 \textbf{max} ( \TextSoulign{blue}{ }{ 5} - \TextSoulign{red}{ }{5} ) $x_1^1$ + (\TextSoulign{blue}{ }{ 7} - \TextSoulign{red}{ }{15} ) $x_1^2$ + (\TextSoulign{blue}{ }{3} -  \TextSoulign{black}{ }{5}) $x_1^3$
 \\
- Il n'existe plus de solutions optimales tout les coefficients sont nul ou négatifs. 
+ Il n'existe plus de solutions optimales, tous les coefficients sont nuls ou négatifs. 
  \\
 
 }
 
 \item{
-Sous problème machine 2: 
+Sous-problème machine 2: 
 \\
 \\
 \textit{\underline{Rappel:}}  Tâches demandées pour Machine 2 =  \TextSoulign{green}{ }{2}$x_2^1$ + \TextSoulign{green}{ }{10}$x_2^2$ + \TextSoulign{green}{ }{5}$x_2^3$  \\ 
@@ -197,20 +195,20 @@ Capacité Machine 2 = 3$x_2^1$ + 4$x_2^2$ + $x_2^3$ $\leq$ 5
 \\ \\ 
 \textbf{max} ( \TextSoulign{green}{ }{2} - \TextSoulign{red}{ }{5} ) $x_2^1$ + (\TextSoulign{green}{ }{10} - \TextSoulign{red}{ }{15} ) $x_2^2$ + (\TextSoulign{green}{ }{5} - \TextSoulign{black}{ }{5}) $x_2^3$
 \\
-Encore une fois tout les coefficiens sont nuls ou négatifs, il n y a pas de nouvelles solution.
+Encore une fois tous les coefficients sont nuls ou négatifs, il n y a pas de nouvelles solutions.
 }
 \end{itemize}
 
-Si il n'existe aucune nouvelle solution apporté, il n'existe pas d'autres solutions optimal, elle a déjà été trouvée. La colonne rajoutée n'améliore finalement en rien.
+Si il n'existe aucune nouvelle solution apportée, il n'existe pas d'autre solution optimale, elle a déjà été trouvée. La colonne rajoutée n'améliore finalement en rien.
 \\
-La solution optimal est :
+La solution optimale est :
 \begin{itemize}
 \item{(1, 0, 0) associé à la machine 1}
 \item{(0, 1, 1) associé à la machine 2}
 \end{itemize}
 
 \iffalse
-Voici une représentation du Branch and price:
+Voici une représentation du textit{Branch and price}:
 
 \begin{figure}[h]
 \setlength{
